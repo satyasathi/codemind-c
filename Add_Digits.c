@@ -1,16 +1,15 @@
-#include<bits/stdc++.h>
-using namespace std;
+#include<stdio.h>
 int main(){
-    int n;
-    cin >> n;
-    while(n>10){
-        int x=0,d;
-        while(n){
+    int n,d;
+    scanf("%d",&n);
+    while(n>9){
+        int x=0;
+        while(n>0){
             d=n%10;
             n=n/10;
             x+=d;
         }
         n=x;
     }
-    cout << n;
+    printf("%d",n);
 }
